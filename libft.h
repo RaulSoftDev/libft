@@ -69,18 +69,4 @@ void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-//PRINTF
-int		ft_printf(char const *s, ...);
-int		ft_putchar_pf(int n, int fd);
-int		ft_putstr_pf(char *s, int fd);
-int		ft_putnbr_pf(int n, int fd);
-int		ft_putunbr_pf(unsigned int n, int fd);
-int		ft_puthex_pf(unsigned int n, size_t type, int fd);
-int		ft_putvoid_pf(unsigned long n, size_t type, int fd);
-//UTILS PRINTF
-char	**ft_freear(char **ptr);
-int		ft_vargscount(char const *s);
-int		ft_checkformat(char c);
-//GNL
-char	*get_next_line(int fd);
 #endif //LIBFT_H
